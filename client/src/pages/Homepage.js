@@ -13,6 +13,9 @@ const Homepage = () => {
   const handleLoad = () => {
     setLoading(true)
     console.log(loading)
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   };
 
   useEffect(() => {
@@ -21,7 +24,7 @@ const Homepage = () => {
 
   return (
     <>
-    {loading === false ? (
+    {loading === true ? (
       <Loading />
     ):(
     <Container>
