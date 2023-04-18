@@ -12,7 +12,7 @@ const Homepage = () => {
   const handleLoad = () => setLoading(false);
   return (
     <>
-    {loading ? (
+    {loading === false ? (
       <Loading />
     ):(
     <Container>
