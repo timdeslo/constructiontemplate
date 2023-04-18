@@ -21,8 +21,8 @@ const Homepage = () => {
       <Section>
         <h2>Nos Project</h2>
         <Middiv>
-          <ImgDivMid src="/client/public/pictures/project1.jpg" />
-          <ImgDivMid src="/constructiontemplate/client/public/pictures/project2.jpg" />
+          <ImgDivMid src="pictures/project1.jpg" />
+          <ImgDivMid src="/pictures/project2.jpg" />
           <ImgDivMid src="/pictures/project2.1.jpg" />
           <ImgDivMid src="/pictures/project3.jpg" />
           <ImgDivMid src="/pictures/project3.1.jpg" />
