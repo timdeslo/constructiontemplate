@@ -5,13 +5,16 @@ import {breakpoints} from "../GlobalStyles";
 import {useState, useEffect} from "react";
 import Loading from "./Loading";
 
-
 const Homepage = () => {
-  window.scrollTo(0, 0)
+  window.scrollTo(0, 0);
   const [loading, setLoading] = useState(true);
 
   const handleLoad = () => {
-    setLoading(false)
+    setLoading(true);
+    console.log(loading);
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
   };
 
   useEffect(() => {
@@ -20,37 +23,37 @@ const Homepage = () => {
 
   return (
     <>
-    {loading ? (
-      <Loading />
-    ):(
-    <Container>
-      <Topdiv>
-        <H1>Les Constructions S.A.</H1>
-        <div>
-          <Ptop>Construire avec passion, livrer avec fierté</Ptop>
-          <Ptop2>Construction neuve et rénovation</Ptop2>
-          <Links to="/about">
-            <PtopInfo>plus D'info</PtopInfo>
-          </Links>
-        </div>
-      </Topdiv>
-      <Section>
-        <h2>Nos Project</h2>
-        <Middiv>
-          <ImgDivMid src="pictures/project1.jpg" onLoad={handleLoad} />
-          <ImgDivMid src="pictures/project2.jpg" onLoad={handleLoad} />
-          <ImgDivMid src="pictures/project2.1.jpg" onLoad={handleLoad} />
-          <ImgDivMid src="pictures/project3.jpg" onLoad={handleLoad} />
-          <ImgDivMid src="pictures/project3.1.jpg" onLoad={handleLoad} />
-          <ImgDivMid src="pictures/project3.2.jpg" onLoad={handleLoad} />
-          <ImgDivMid src="pictures/project3.3.jpg" onLoad={handleLoad} />
-          <ImgDivMid src="pictures/project4.jpg" onLoad={handleLoad} />
-          <ImgDivMid src="pictures/project4.1.jpg" onLoad={handleLoad} />
-          <ImgDivMid src="pictures/project4.2.jpg" onLoad={handleLoad} />
-        </Middiv>
-      </Section>
-    </Container>
-    )}
+      {loading ? (
+        <Loading />
+      ) : (
+        <Container>
+          <Topdiv>
+            <H1>Les Constructions S.A.</H1>
+            <div>
+              <Ptop>Construire avec passion, livrer avec fierté</Ptop>
+              <Ptop2>Construction neuve et rénovation</Ptop2>
+              <Links to="/about">
+                <PtopInfo>plus D'info</PtopInfo>
+              </Links>
+            </div>
+          </Topdiv>
+          <Section>
+            <h2>Nos Project</h2>
+            <Middiv>
+              <ImgDivMid src="pictures/project1.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project2.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project2.1.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project3.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project3.1.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project3.2.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project3.3.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project4.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project4.1.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project4.2.jpg" onLoad={handleLoad} />
+            </Middiv>
+          </Section>
+        </Container>
+      )}
     </>
   );
 };
@@ -141,8 +144,8 @@ const Links = styled(Link)`
 `;
 
 const Section = styled.div`
-background-color: #4e4e4e;
-margin-bottom: 50px;
+  background-color: #4e4e4e;
+  margin-bottom: 50px;
   margin-left: 50px;
   @media screen and (max-width: ${breakpoints.first}) and (min-width: ${breakpoints.second}) {
     margin-left: 50px;
