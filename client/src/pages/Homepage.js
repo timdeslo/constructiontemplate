@@ -8,11 +8,14 @@ import Loading from "./Loading";
 
 const Homepage = () => {
   window.scrollTo(0, 0)
-  const [loading, setLoading] = useState(true);
-  const handleLoad = () => setLoading(false);
+  const [loading, setLoading] = useState(false);
+  const handleLoad = () => {
+    setLoading(true)
+    console.log(loading)
+  };
   return (
     <>
-    {loading === false ? (
+    {loading === true ? (
       <Loading />
     ):(
     <Container>
