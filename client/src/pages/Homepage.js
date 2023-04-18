@@ -21,7 +21,7 @@ const Homepage = () => {
 
   return (
     <>
-    {loading === true ? (
+    {loading === false ? (
       <Loading />
     ):(
     <Container>
