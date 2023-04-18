@@ -20,7 +20,7 @@ const Homepage = () => {
       <Section>
         <h2>Nos Project</h2>
         <Middiv>
-          <ImgDivMid url="C:\Users\tim\OneDrive\Bureau\MY PROJECTS\constructiontemplate\client\public\pictures\project1.jpg" />
+          <ImgDivMid src="C:\Users\tim\OneDrive\Bureau\MY PROJECTS\constructiontemplate\client\public\pictures\project1.jpg" />
           <ImgDivMid src="/pictures/project2.jpg" />
           <ImgDivMid src="/pictures/project2.1.jpg" />
           <ImgDivMid src="/pictures/project3.jpg" />
