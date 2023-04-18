@@ -13,7 +13,7 @@ const Header = () => {
         <Links to="/about">
           <P>A propos</P>
         </Links>
-        <Links to="contact">
+        <Links to="/contact">
           <P>Nous Joindre</P>
         </Links>
       </HeaderRight>
