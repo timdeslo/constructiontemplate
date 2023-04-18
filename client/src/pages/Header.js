@@ -6,7 +6,7 @@ import { breakpoints } from "../GlobalStyles";
 const Header = () => {
   return (
     <HeaderDiv>
-      <Links to="/">
+      <Links to="/constructiontemplate">
         <H1>Les Constructions S.A.</H1>
       </Links>
       <HeaderRight>
