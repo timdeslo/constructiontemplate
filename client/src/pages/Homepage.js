@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import {breakpoints} from "../GlobalStyles";
+import project1 from "../pictures/project1.jpg";
 
 const Homepage = () => {
   window.scrollTo(0, 0)
@@ -20,7 +21,7 @@ const Homepage = () => {
       <Section>
         <h2>Nos Project</h2>
         <Middiv>
-          <ImgDivMid src="client\public\pictures\project1.jpg" />
+          <ImgDivMid src={project1} />
           <ImgDivMid src="/constructiontemplate/client/public/pictures/project1.jpg" />
           <ImgDivMid src="/client/public/pictures/project1.jpg" />
           <ImgDivMid src="/public/pictures/project1.jpg" />
