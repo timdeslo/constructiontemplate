@@ -14,7 +14,7 @@ const Homepage = () => {
     console.log(loading);
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 2000);
   };
 
   useEffect(() => {
