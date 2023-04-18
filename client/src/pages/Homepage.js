@@ -20,10 +20,10 @@ const Homepage = () => {
       <Section>
         <h2>Nos Project</h2>
         <Middiv>
-          <ImgDivMid src="C:\Users\tim\OneDrive\Bureau\MY PROJECTS\constructiontemplate\client\public\pictures\project1.jpg" />
-          <ImgDivMid src="/pictures/project2.jpg" />
-          <ImgDivMid src="/pictures/project2.1.jpg" />
-          <ImgDivMid src="/pictures/project3.jpg" />
+          <ImgDivMid src="C:/Users/tim/OneDrive/Bureau/MY PROJECTS/constructiontemplate/client/public/pictures/project1.jpg" />
+          <ImgDivMid src="/constructiontemplate/client/public/pictures/project1.jpg" />
+          <ImgDivMid src="/client/public/pictures/project1.jpg" />
+          <ImgDivMid src="/public/pictures/project1.jpg" />
           <ImgDivMid src="/pictures/project3.1.jpg" />
           <ImgDivMid src="/pictures/project3.2.jpg" />
           <ImgDivMid src="/pictures/project3.3.jpg" />
