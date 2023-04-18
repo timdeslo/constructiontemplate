@@ -8,14 +8,10 @@ import Loading from "./Loading";
 
 const Homepage = () => {
   window.scrollTo(0, 0)
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handleLoad = () => {
-    setLoading(true)
-    console.log(loading)
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
+    setLoading(false)
   };
 
   useEffect(() => {
@@ -24,7 +20,7 @@ const Homepage = () => {
 
   return (
     <>
-    {loading === true ? (
+    {loading ? (
       <Loading />
     ):(
     <Container>
