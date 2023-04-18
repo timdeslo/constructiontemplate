@@ -2,17 +2,23 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import {breakpoints} from "../GlobalStyles";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import Loading from "./Loading";
 
 
 const Homepage = () => {
   window.scrollTo(0, 0)
   const [loading, setLoading] = useState(false);
+
   const handleLoad = () => {
     setLoading(true)
     console.log(loading)
   };
+
+  useEffect(() => {
+    console.log(loading);
+  }, [loading]);
+
   return (
     <>
     {loading === true ? (
