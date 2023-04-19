@@ -10,16 +10,12 @@ const Homepage = () => {
   const [loading, setLoading] = useState(true);
 
   const handleLoad = () => {
-    setLoading(true);
+    setLoading(false);
     console.log(loading);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    useEffect(() => {
+      console.log(loading);
+    }, [loading]);
   };
-
-  useEffect(() => {
-    console.log(loading);
-  }, [loading]);
 
   return (
     <>
