@@ -9,13 +9,9 @@ const Homepage = () => {
   window.scrollTo(0, 0);
   const [loading, setLoading] = useState(true);
 
-  const handleLoad = () => {
+  useEffect(() => {
     setLoading(false);
-    console.log(loading);
-    useEffect(() => {
-      console.log(loading);
-    }, [loading]);
-  };
+  }, []);
 
   return (
     <>
@@ -36,16 +32,16 @@ const Homepage = () => {
           <Section>
             <h2>Nos Project</h2>
             <Middiv>
-              <ImgDivMid src="pictures/project1.jpg" onLoad={handleLoad} />
-              <ImgDivMid src="pictures/project2.jpg" onLoad={handleLoad} />
-              <ImgDivMid src="pictures/project2.1.jpg" onLoad={handleLoad} />
-              <ImgDivMid src="pictures/project3.jpg" onLoad={handleLoad} />
-              <ImgDivMid src="pictures/project3.1.jpg" onLoad={handleLoad} />
-              <ImgDivMid src="pictures/project3.2.jpg" onLoad={handleLoad} />
-              <ImgDivMid src="pictures/project3.3.jpg" onLoad={handleLoad} />
-              <ImgDivMid src="pictures/project4.jpg" onLoad={handleLoad} />
-              <ImgDivMid src="pictures/project4.1.jpg" onLoad={handleLoad} />
-              <ImgDivMid src="pictures/project4.2.jpg" onLoad={handleLoad} />
+              <ImgDivMid src="pictures/project1.jpg" />
+              <ImgDivMid src="pictures/project2.jpg" />
+              <ImgDivMid src="pictures/project2.1.jpg" />
+              <ImgDivMid src="pictures/project3.jpg" />
+              <ImgDivMid src="pictures/project3.1.jpg" />
+              <ImgDivMid src="pictures/project3.2.jpg" />
+              <ImgDivMid src="pictures/project3.3.jpg" />
+              <ImgDivMid src="pictures/project4.jpg" />
+              <ImgDivMid src="pictures/project4.1.jpg" />
+              <ImgDivMid src="pictures/project4.2.jpg" />
             </Middiv>
           </Section>
         </Container>
@@ -202,3 +198,5 @@ const ImgDivMid = styled.img`
   }
 `;
 export default Homepage;
+
+// "homepage": "https://timdeslo.github.io/constructiontemplate",

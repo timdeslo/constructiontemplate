@@ -13,13 +13,13 @@ const About = () => {
           générale qui se spécialise dans la réalisation de projets résidentiels
           exceptionnels. Nous sommes fiers de notre réputation de service
           impeccable, d'expertise hors pair et de réalisations de grande qualité.
-          <p></p>
+          <span></span>
           Notre priorité absolue est de répondre aux exigences de nos clients tout
           au long de leur projet. C'est pourquoi nous offrons une assistance
           personnalisée et une écoute constante à nos clients pour comprendre
           leurs besoins et s'assurer que chaque étape du projet est réalisée avec
           succès.
-          <p></p>
+          <span></span>
           Nous sommes profondément reconnaissants envers tous nos clients pour
           leur confiance et leur fidélité au fil des ans, ce qui nous a encouragés
           à poursuivre notre engagement envers l'excellence et la qualité dans
