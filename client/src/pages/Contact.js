@@ -168,6 +168,7 @@ const Button = styled.button`
 
 const Div = styled.div`
   display: flex;
+  background-color: #4e4e4e;
   flex-direction: column;
   align-items: center;
   font-size: 30px;
