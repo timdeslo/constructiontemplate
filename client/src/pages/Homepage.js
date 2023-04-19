@@ -38,7 +38,7 @@ const Homepage = () => {
           <Section>
             <h2>Nos Project</h2>
             <Middiv>
-              <ImgDivMid src="pictures/project1.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project1.jpg" />
               <ImgDivMid src="pictures/project2.jpg" />
               <ImgDivMid src="pictures/project2.1.jpg" />
               <ImgDivMid src="pictures/project3.jpg" />
