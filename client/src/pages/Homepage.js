@@ -8,16 +8,11 @@ import Loading from "./Loading";
 const Homepage = () => {
   window.scrollTo(0, 0);
   const [loading, setLoading] = useState(true);
-  const [int, setInt] = useState(true);
-
-  const timer = setInterval(() => {
-    setInt(false);
-  }, 1500);
 
   useEffect(() => {
     setLoading(false);
-    clearInterval(timer);
-  }, [int]);
+    
+  }, []);
 
   return (
     <>
@@ -39,15 +34,15 @@ const Homepage = () => {
             <h2>Nos Project</h2>
             <Middiv>
               <ImgDivMid src="/constructiontemplate/pictures/project1.jpg" />
-              <ImgDivMid src="pictures/project2.jpg" />
-              <ImgDivMid src="pictures/project2.1.jpg" />
-              <ImgDivMid src="pictures/project3.jpg" />
-              <ImgDivMid src="pictures/project3.1.jpg" />
-              <ImgDivMid src="pictures/project3.2.jpg" />
-              <ImgDivMid src="pictures/project3.3.jpg" />
-              <ImgDivMid src="pictures/project4.jpg" />
-              <ImgDivMid src="pictures/project4.1.jpg" />
-              <ImgDivMid src="pictures/project4.2.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project2.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project2.1.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project3.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project3.1.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project3.2.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project3.3.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project4.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project4.1.jpg" />
+              <ImgDivMid src="/constructiontemplate/pictures/project4.2.jpg" />
             </Middiv>
           </Section>
         </Container>
