@@ -84,10 +84,12 @@ const Container = styled.div`
   }
   @media screen and (max-width: 559px) and (min-width: ${breakpoints.phone}) {
     padding-left: 30px;
+    margin-bottom: 50px;
   }
   @media screen and (max-width: ${breakpoints.phone}) {
     padding-left: 30px;
     font-size: 20px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -157,6 +159,7 @@ const Button = styled.button`
   padding: 10px 40px;
   border-radius: 7px;
   border: none;
+  background-color: white;
   :hover& {
     cursor: pointer;
     background-color: orange;
