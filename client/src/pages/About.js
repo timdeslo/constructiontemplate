@@ -82,5 +82,7 @@ font-size: 50px;
   }
 `;
 
-const P = styled.div``;
+const P = styled.div`
+font-family: 'Oswald', sans-serif;
+`;
 export default About;

@@ -176,9 +176,11 @@ const Div = styled.div`
   }
   @media screen and (max-width: ${breakpoints.second}) and (min-width: ${breakpoints.phone}) {
     font-size: 25px;
+    margin-bottom: 50px;
   }
   @media screen and (max-width: ${breakpoints.phone}) {
     font-size: 20px;
+    margin-bottom: 50px;
   }
 `;
 
