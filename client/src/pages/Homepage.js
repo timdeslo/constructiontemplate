@@ -8,10 +8,16 @@ import Loading from "./Loading";
 const Homepage = () => {
   window.scrollTo(0, 0);
   const [loading, setLoading] = useState(true);
+  const [int, setInt] = useState(true);
+
+  const timer = setInterval(() => {
+    setInt(false);
+  }, 1500);
 
   useEffect(() => {
     setLoading(false);
-  }, []);
+    clearInterval(timer);
+  }, [int]);
 
   return (
     <>
