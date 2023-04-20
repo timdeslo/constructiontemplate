@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import {breakpoints} from "../GlobalStyles";
 import {useState, useEffect} from "react";
 import Loading from "./Loading";
+import Enlarge from "./Enlarge";
 
 const Homepage = () => {
   window.scrollTo(0, 0);
@@ -33,16 +34,16 @@ const Homepage = () => {
           <Section>
             <h2>Nos Project</h2>
             <Middiv>
-              <ImgDivMid src="/constructiontemplate/pictures/project1.jpg" />
-              <ImgDivMid src="/constructiontemplate/pictures/project2.jpg" />
-              <ImgDivMid src="/constructiontemplate/pictures/project2.1.jpg" />
-              <ImgDivMid src="/constructiontemplate/pictures/project3.jpg" />
-              <ImgDivMid src="/constructiontemplate/pictures/project3.1.jpg" />
-              <ImgDivMid src="/constructiontemplate/pictures/project3.2.jpg" />
-              <ImgDivMid src="/constructiontemplate/pictures/project3.3.jpg" />
-              <ImgDivMid src="/constructiontemplate/pictures/project4.jpg" />
-              <ImgDivMid src="/constructiontemplate/pictures/project4.1.jpg" />
-              <ImgDivMid src="/constructiontemplate/pictures/project4.2.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project1.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project2.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project2.1.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project3.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project3.1.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project3.2.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project3.3.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project4.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project4.1.jpg" />
+              <Enlarge src="/constructiontemplate/pictures/project4.2.jpg" />
             </Middiv>
           </Section>
         </Container>
@@ -176,28 +177,6 @@ const Middiv = styled.div`
   }
 `;
 
-const ImgDivMid = styled.img`
-  width: 250px;
-  height: 333px;
-  margin-top: 25px;
-  border: 2px solid orange;
-  @media screen and (max-width: ${breakpoints.first}) and (min-width: ${breakpoints.second}) {
-    width: 250px;
-    height: 333px;
-  }
-  @media screen and (max-width: ${breakpoints.second}) and (min-width: 560px) {
-    width: 200px;
-    height: 275px;
-  }
-  @media screen and (max-width: 559px) and (min-width: ${breakpoints.phone}) {
-    width: 150px;
-    height: 225px;
-  }
-  @media screen and (max-width: ${breakpoints.phone}) {
-    width: 150px;
-    height: 225px;
-  }
-`;
 export default Homepage;
 
 // "homepage": "https://timdeslo.github.io/constructiontemplate",

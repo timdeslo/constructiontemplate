@@ -11,6 +11,7 @@ export default createGlobalStyle`
     html, body {
         margin: 0;
         margin-top: 0;
+        background-color: #4e4e4e;
     }
     /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure,
