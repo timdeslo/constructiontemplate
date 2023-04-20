@@ -9,7 +9,7 @@ const About = () => {
       <H1>A propos</H1>
       <Div>
         <P>
-          Bienvenue chez Les Construction S.A., une entreprise de construction
+          Bienvenue chez Les Constructions S.A., une entreprise de construction
           générale qui se spécialise dans la réalisation de projets résidentiels
           exceptionnels. Nous sommes fiers de notre réputation de service
           impeccable, d'expertise hors pair et de réalisations de grande qualité.

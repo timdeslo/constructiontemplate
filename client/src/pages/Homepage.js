@@ -32,7 +32,7 @@ const Homepage = () => {
             </div>
           </Topdiv>
           <Section>
-            <h2>Nos Project</h2>
+            <h2>Nos Projets</h2>
             <Middiv>
               <Enlarge src="/constructiontemplate/pictures/project1.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project2.jpg" />

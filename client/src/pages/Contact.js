@@ -60,7 +60,7 @@ const Contact = () => {
               <FiSmartphone />: 514-585-6192
               <p></p>
               Et par courriel à<p></p>
-              example@gmail.com
+              lesconstructionS.A@gmail.com
             </P>
           </Div>
         </Wrapper>
@@ -159,6 +159,8 @@ const Button = styled.button`
   padding: 10px 40px;
   border-radius: 7px;
   border: none;
+  color: black;
+  border: 1px solid black;
   background-color: white;
   :hover& {
     cursor: pointer;
