@@ -34,6 +34,7 @@ const Homepage = () => {
           <Section>
             <h2>Nos Projets</h2>
             <Middiv>
+            <GridContainer>
               <Enlarge src="/constructiontemplate/pictures/project1.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project2.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project2.1.jpg" />
@@ -44,6 +45,7 @@ const Homepage = () => {
               <Enlarge src="/constructiontemplate/pictures/project4.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project4.1.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project4.2.jpg" />
+            </GridContainer>
             </Middiv>
           </Section>
         </Container>
@@ -153,6 +155,12 @@ const Section = styled.div`
   @media screen and (max-width: ${breakpoints.phone}) {
     margin-left: 30px;
   }
+`;
+const GridContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 `;
 
 const Middiv = styled.div`
