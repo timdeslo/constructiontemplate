@@ -11,7 +11,7 @@ const Contact = () => {
   const Navigate = useNavigate();
 
   if (state.succeeded) {
-    return Navigate("/");
+    return Navigate("/constructiontemplate");
   }
   return (
     <Container>
