@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/constructiontemplate/static/js/main.6080d37e.js",
-    "index.html": "/constructiontemplate/index.html",
-    "main.6080d37e.js.map": "/constructiontemplate/static/js/main.6080d37e.js.map"
+    "main.js": "./static/js/main.d1051bb9.js",
+    "index.html": "./index.html",
+    "main.d1051bb9.js.map": "./static/js/main.d1051bb9.js.map"
   },
   "entrypoints": [
-    "static/js/main.6080d37e.js"
+    "static/js/main.d1051bb9.js"
   ]
 }
