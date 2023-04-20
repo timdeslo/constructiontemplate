@@ -12,7 +12,6 @@ const Homepage = () => {
 
   useEffect(() => {
     setLoading(false);
-    
   }, []);
 
   return (
@@ -32,10 +31,9 @@ const Homepage = () => {
             </div>
           </Topdiv>
           <Section>
-            <h2>Nos Projets</h2>
+            <H2>Nos Projets</H2>
             <Middiv>
-            <GridContainer>
-              <Enlarge src="/constructiontemplate/pictures/project1.jpg" />
+              <Enlarge src="/constructiontemplate//pictures/project1.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project2.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project2.1.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project3.jpg" />
@@ -45,7 +43,6 @@ const Homepage = () => {
               <Enlarge src="/constructiontemplate/pictures/project4.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project4.1.jpg" />
               <Enlarge src="/constructiontemplate/pictures/project4.2.jpg" />
-            </GridContainer>
             </Middiv>
           </Section>
         </Container>
@@ -142,6 +139,10 @@ const Links = styled(Link)`
 const Section = styled.div`
   background-color: #4e4e4e;
   margin-bottom: 50px;
+`;
+
+const H2 = styled.h2`
+  margin-bottom: 0px;
   margin-left: 50px;
   @media screen and (max-width: ${breakpoints.first}) and (min-width: ${breakpoints.second}) {
     margin-left: 50px;
@@ -156,19 +157,14 @@ const Section = styled.div`
     margin-left: 30px;
   }
 `;
-const GridContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-`;
 
 const Middiv = styled.div`
   display: grid;
-  align-items: center;
-  grid-template-rows: repeat(auto, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
   background-color: #4e4e4e;
-  gap: 5px;
+
   width: 100%;
   @media screen and (min-width: 1350px) {
     grid-template-columns: repeat(5, 1fr);
@@ -188,3 +184,6 @@ const Middiv = styled.div`
 export default Homepage;
 
 // "homepage": "https://timdeslo.github.io/constructiontemplate",
+//<Enlarge
+// src={process.env.PUBLIC_URL + "/pictures/project1.jpg"}
+// />
