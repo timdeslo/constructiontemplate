@@ -184,6 +184,6 @@ const Middiv = styled.div`
 export default Homepage;
 
 // "homepage": "https://timdeslo.github.io/constructiontemplate",
-//<Enlarge
-// src={process.env.PUBLIC_URL + "/pictures/project1.jpg"}
-// />
+{/* <Enlarge
+src={process.env.PUBLIC_URL + "/pictures/project1.jpg"}
+/> */}

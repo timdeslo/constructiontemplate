@@ -34,9 +34,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #4e4e4e;
-  height: 100vh;
+  height: fit-content;
   padding: 0px 50px;
-  
   @media screen and (max-width: ${breakpoints.first}) and (min-width: ${breakpoints.second}) {
   padding-left: 50px;
       }
@@ -57,6 +56,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 font-size: 30px;
+padding-bottom: 50px;
 @media screen and (max-width: ${breakpoints.first}) and (min-width: ${breakpoints.second}) {
     font-size: 30px;
   }

@@ -73,7 +73,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #4e4e4e;
-  height: 100vh;
+  height: fit-content;
   padding: 0px 50px;
 
   @media screen and (max-width: ${breakpoints.first}) and (min-width: ${breakpoints.second}) {
@@ -179,11 +179,11 @@ const Div = styled.div`
   }
   @media screen and (max-width: ${breakpoints.second}) and (min-width: ${breakpoints.phone}) {
     font-size: 25px;
-    margin-bottom: 50px;
+    
   }
   @media screen and (max-width: ${breakpoints.phone}) {
     font-size: 20px;
-    margin-bottom: 50px;
+    
   }
 `;
 
